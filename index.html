@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Templates de sites pour artisans — Showcase agence SEO</title>
-<meta name="description" content="3 packs de templates de sites web optimisés SEO pour artisans (plomberie, électricité, menuiserie, paysagisme, peinture, etc.) : Simple, Standard, Premium. Abonnement mensuel tout compris.">
+<title>Web'Artiz — Site web référencé pour artisans</title>
+<meta name="description" content="Web'Artiz crée, héberge et optimise votre site web d'artisan. SEO local, suivi mensuel, reporting transparent. À partir de 59€ HT/mois.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +54,126 @@
     color: #FCE4E2; margin-bottom: 1rem;
   }
   header.hero .eyebrow::before { content: ''; width: 28px; height: 1.5px; background: #FCE4E2; }
+  header.hero .brand-mark {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
+  }
+  header.hero .brand-tagline {
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FCE4E2;
+    opacity: 0.92;
+  }
+
+  /* WHY SUBSCRIPTION */
+  section.why-subscription { padding: 5rem 0; background: white; }
+  .why-intro { max-width: 880px; margin-bottom: 3rem; }
+  .why-intro h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); margin-bottom: 0.75rem; }
+  .why-intro p { color: #4B5563; font-size: 1.05rem; line-height: 1.65; }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .why-pillar {
+    background: #FAF6F0;
+    border: 1px solid #E1E5EB;
+    border-radius: 12px;
+    padding: 1.75rem 1.5rem;
+  }
+  .why-pillar-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #154780;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .why-pillar h3 {
+    font-size: 1.125rem;
+    color: #154780;
+    margin-bottom: 0.5rem;
+    font-family: 'Fraunces', Georgia, serif;
+  }
+  .why-pillar p { font-size: 0.95rem; color: #4B5563; line-height: 1.55; margin: 0; }
+  .why-conclusion {
+    background: linear-gradient(135deg, #154780 0%, #1E5FA8 100%);
+    color: white;
+    padding: 1.5rem 1.75rem;
+    border-radius: 12px;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    margin-top: 1rem;
+  }
+
+  /* MEASURE IMPACT */
+  section.measure-impact { padding: 5rem 0; background: #FAF6F0; }
+  .measure-intro { max-width: 880px; margin-bottom: 3rem; }
+  .measure-intro h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); margin-bottom: 0.75rem; }
+  .measure-intro p { color: #4B5563; font-size: 1.05rem; line-height: 1.65; }
+  .measure-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .measure-tool {
+    background: white;
+    border: 1px solid #E1E5EB;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .measure-tool-check {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    background: #639922;
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .measure-tool h3 {
+    font-size: 1.0625rem;
+    color: #154780;
+    margin-bottom: 0.35rem;
+    font-family: 'Fraunces', Georgia, serif;
+  }
+  .measure-tool p { font-size: 0.9375rem; color: #4B5563; line-height: 1.55; margin: 0; }
+  .measure-note {
+    font-size: 0.875rem;
+    color: #6B7280;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    .why-grid { grid-template-columns: 1fr; }
+    .measure-grid { grid-template-columns: 1fr; }
+  }
 
   /* PACKS GRID */
   section.packs { padding: 5rem 0; background: #FAF6F0; }
@@ -712,11 +832,78 @@
 
 <header class="hero">
   <div class="container">
-    <span class="eyebrow">Templates artisans — Showcase agence SEO</span>
-    <h1>Choisissez le <em>pack</em> qui correspond à votre projet</h1>
-    <p class="lead">3 templates de sites web optimisés SEO pour artisans (plomberie, électricité, menuiserie, paysagisme, peinture, etc.). Abonnement mensuel tout compris : hébergement, maintenance, support.</p>
+    <span class="brand-mark">Web'Artiz <span class="brand-tagline">Site web référencé pour artisans</span></span>
+    <h1>Web'Artiz — Le site web <em>référencé</em> des artisans</h1>
+    <p class="lead">Création, hébergement, suivi SEO et optimisation IA, tout-en-un dans un abonnement mensuel.</p>
   </div>
 </header>
+
+<section class="why-subscription">
+  <div class="container">
+    <div class="why-intro">
+      <h2>Pourquoi un abonnement plutôt qu'un site one-shot ?</h2>
+      <p>Un site web n'est pas un produit fini. Google fait évoluer son algorithme plusieurs fois par an, les intelligences artificielles comme ChatGPT, Perplexity ou Gemini deviennent les nouveaux moteurs de recherche, et vos concurrents locaux bougent en permanence. Un site livré puis abandonné perd ses positions en 6 à 12 mois.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-pillar">
+        <span class="why-pillar-icon">→</span>
+        <h3>SEO Google</h3>
+        <p>Suivi des positions, optimisations techniques régulières, adaptations aux Core Updates Google.</p>
+      </div>
+      <div class="why-pillar">
+        <span class="why-pillar-icon">→</span>
+        <h3>GEO — Optimisation IA</h3>
+        <p>Votre site optimisé pour être cité dans les réponses de ChatGPT, Perplexity, Gemini et Copilot — là où vos futurs clients posent désormais leurs questions.</p>
+      </div>
+      <div class="why-pillar">
+        <span class="why-pillar-icon">→</span>
+        <h3>Maintenance & sécurité</h3>
+        <p>Hébergement haute disponibilité, sauvegardes, certificat SSL, Core Web Vitals, compatibilité mobile.</p>
+      </div>
+    </div>
+    <p class="why-conclusion">Avec Web'Artiz, votre site n'est pas livré puis oublié. Il est suivi, mesuré et optimisé chaque mois pour rester visible dans la durée.</p>
+  </div>
+</section>
+
+<section class="measure-impact">
+  <div class="container">
+    <div class="measure-intro">
+      <h2>Mesurez l'impact réel de votre site</h2>
+      <p>Chaque site Web'Artiz est livré avec une installation professionnelle complète des outils de mesure Google. Vous savez exactement combien de visiteurs arrivent sur votre site, d'où ils viennent, et combien vous contactent.</p>
+    </div>
+    <div class="measure-grid">
+      <div class="measure-tool">
+        <span class="measure-tool-check">✓</span>
+        <div>
+          <h3>Google Search Console</h3>
+          <p>Suivi officiel Google de votre référencement : requêtes, positions, indexation, erreurs détectées.</p>
+        </div>
+      </div>
+      <div class="measure-tool">
+        <span class="measure-tool-check">✓</span>
+        <div>
+          <h3>Google Analytics 4 (GA4)</h3>
+          <p>Analyse complète du trafic, des comportements et des conversions sur votre site.</p>
+        </div>
+      </div>
+      <div class="measure-tool">
+        <span class="measure-tool-check">✓</span>
+        <div>
+          <h3>Google Business Profile</h3>
+          <p>Optimisation et gestion de votre fiche Google pour la présence locale.</p>
+        </div>
+      </div>
+      <div class="measure-tool">
+        <span class="measure-tool-check">✓</span>
+        <div>
+          <h3>Dashboard Looker Studio personnalisé</h3>
+          <p>Toutes vos données regroupées dans un tableau de bord clair, accessible 24h/24 via un lien unique. (Packs 2 et 3)</p>
+        </div>
+      </div>
+    </div>
+    <p class="measure-note">Dashboard Looker Studio inclus dans les Packs Standard et Premium. Pack Simple : accès direct aux outils Google.</p>
+  </div>
+</section>
 
 <section class="packs">
   <div class="container">
@@ -749,14 +936,15 @@
             <li><strong>3 pages essentielles</strong> : accueil, services, contact</li>
             <li>Charte personnalisable</li>
             <li>Formulaire de contact</li>
-            <li>Hébergement & nom de domaine inclus</li>
+            <li>Hébergement, domaine et SSL inclus</li>
             <li>Optimisé mobile</li>
             <li>Conformité RGPD</li>
           </ul>
           <h4 class="pack-section-title is-secondary">Référencement</h4>
           <ul class="pack-features">
             <li>SEO local complet (Schema.org, FAQ)</li>
-            <li>Optimisation Google Business Profile</li>
+            <li>Installation Google Search Console + Analytics</li>
+            <li>Optimisation initiale Google Business Profile</li>
           </ul>
           <div class="pack-action">
             <a href="./pack-1-simple/" class="btn btn-ghost" target="_blank" rel="noopener">Voir la démo →</a>
@@ -780,7 +968,7 @@
           <p class="pack-price-meta">Engagement 36 mois · Maintenance incluse</p>
         </div>
         <div class="pack-card-body">
-          <p class="pack-tagline">Site jusqu'à 15 pages, optimisé SEO</p>
+          <p class="pack-tagline">Site jusqu'à 15 pages, optimisé SEO &amp; IA</p>
           <h4 class="pack-section-title">Création du site</h4>
           <ul class="pack-features">
             <li class="highlight">Tout le Pack 1, plus :</li>
@@ -789,13 +977,14 @@
             <li>Cartes interactives Leaflet</li>
             <li>Section Réalisations (galerie)</li>
             <li>Page avis clients dédiée</li>
-            <li>Page tarifs détaillée</li>
-            <li>Page partenaires & labels</li>
+            <li>Page partenaires &amp; labels</li>
           </ul>
-          <h4 class="pack-section-title is-secondary">Référencement</h4>
+          <h4 class="pack-section-title is-secondary">Référencement &amp; suivi</h4>
           <ul class="pack-features">
-            <li><strong>Boost SEO Google</strong> (1 mot-clé / page)</li>
-            <li>Schema.org poussé (par zone, service)</li>
+            <li>Suivi SEO trimestriel + optimisations continues</li>
+            <li>Optimisation GEO (citations IA)</li>
+            <li>Dashboard Looker Studio personnalisé</li>
+            <li>1 publication Google Business Profile / mois</li>
           </ul>
           <p class="pack-note">Page service supplémentaire : +10€ HT/mois</p>
           <div class="pack-action">
@@ -821,39 +1010,13 @@
           <p class="pack-price-meta">Engagement 36 mois · Visibilité maximale</p>
         </div>
         <div class="pack-card-body">
-          <p class="pack-tagline">Site jusqu'à 15 pages + 1 article de blog/mois</p>
-          <div class="pack-highlight">
-            <h4 class="pack-highlight-title">🌟 Les + du Pack 3</h4>
-            <ul class="pack-highlight-list">
-              <li>
-                <span class="pack-highlight-name">Visibilité maximale sur Google</span>
-                <span class="pack-highlight-desc">Couverture étendue sur toutes vos villes et toutes vos requêtes business</span>
-              </li>
-              <li>
-                <span class="pack-highlight-name">Référencement dans les IA</span>
-                <span class="pack-highlight-desc">ChatGPT, Claude, Gemini : votre activité citée dans les réponses générées</span>
-              </li>
-              <li>
-                <span class="pack-highlight-name">12 billets de blog inclus / an</span>
-                <span class="pack-highlight-desc">1 article SEO rédigé et publié chaque mois</span>
-              </li>
-              <li>
-                <span class="pack-highlight-name">Statistiques en temps réel 24h/24</span>
-                <span class="pack-highlight-desc">Dashboard personnalisé Looker Studio accessible à tout moment</span>
-              </li>
-            </ul>
-          </div>
-          <h4 class="pack-section-title">Création du site</h4>
+          <p class="pack-tagline">Site jusqu'à 15 pages + 1 article de blog / mois</p>
           <ul class="pack-features">
             <li class="highlight">Tout le Pack 2, plus :</li>
-            <li>Zones d'intervention illimitées</li>
-            <li>Maintenance mensuelle premium</li>
-            <li>Support prioritaire</li>
-          </ul>
-          <h4 class="pack-section-title is-secondary">Référencement</h4>
-          <ul class="pack-features">
-            <li>Suivi Google Search Console</li>
-            <li>Reporting mensuel SEO</li>
+            <li><strong>1 article de blog rédigé par mois</strong> (SEO + GEO optimisé)</li>
+            <li>Suivi SEO mensuel renforcé</li>
+            <li>2 publications Google Business Profile / mois</li>
+            <li>Revue mensuelle commentée du dashboard</li>
           </ul>
           <p class="pack-note">Page service supplémentaire : +10€ HT/mois</p>
           <div class="pack-action">
@@ -910,18 +1073,28 @@
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-num">1</div>
-        <h3 class="step-title">Vous déposez</h3>
-        <p>Photos de chantiers, idées d'articles, modifs de tarifs : tout dans un dossier Google Drive partagé entre vous et nous.</p>
+        <h3 class="step-title">Brief &amp; contenus</h3>
+        <p>Vous remplissez un brief simple et déposez vos contenus (photos, infos) sur un Drive partagé sécurisé.</p>
       </div>
       <div class="step-card">
         <div class="step-num">2</div>
-        <h3 class="step-title">On rédige et publie</h3>
-        <p>On optimise le SEO, retouche les photos et formate joliment, dans le respect du template proposé pour préserver la cohérence du site.</p>
+        <h3 class="step-title">Création de votre site</h3>
+        <p>Notre équipe crée votre site sous 10 à 15 jours ouvrés à partir du template adapté à votre métier.</p>
       </div>
       <div class="step-card">
         <div class="step-num">3</div>
-        <h3 class="step-title">Votre site avance</h3>
-        <p>Vous recevez un récap mail de ce qui a été ajouté à votre site, avec les liens directs vers les nouvelles pages.</p>
+        <h3 class="step-title">Mise en ligne &amp; outils Google</h3>
+        <p>Mise en ligne sur votre domaine, activation SSL, installation de Search Console, Analytics et optimisation Google Business Profile.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3 class="step-title">Suivi &amp; optimisation continue</h3>
+        <p>Suivi régulier des positions Google, optimisations GEO (citations IA), ajustements techniques. Reporting Looker Studio accessible 24h/24 (Packs Standard et Premium).</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">5</div>
+        <h3 class="step-title">Évolution avec votre activité</h3>
+        <p>Mises à jour de vos contenus selon le rythme de votre pack (trimestriel en Pack 2, mensuel en Pack 3), nouvelles photos, nouveaux services.</p>
       </div>
     </div>
 
@@ -944,8 +1117,8 @@
           <p>Pas directement, et c'est volontaire : ça garantit la qualité technique, le SEO et la cohérence visuelle de votre site sur la durée. Vous nous transmettez vos demandes via le Drive partagé, on s'occupe du reste — comme un imprimeur, un comptable ou un graphiste.</p>
         </details>
         <details class="faq-item">
-          <summary>Si j'ai une urgence (numéro changé, horaires) ?</summary>
-          <p>Modifications urgentes traitées sous 48–72h ouvrées (téléphone, horaires, message d'absence, photo de profil). Aucun supplément.</p>
+          <summary>Si j'ai un changement urgent (numéro de téléphone, horaires) ?</summary>
+          <p>Modifications urgentes traitées sous 48–72&nbsp;h ouvrées (téléphone, horaires, message d'absence, photo de profil). Aucun supplément.</p>
         </details>
         <details class="faq-item">
           <summary>Et si je veux publier mes articles moi-même ?</summary>
@@ -953,7 +1126,19 @@
         </details>
         <details class="faq-item">
           <summary>Que se passe-t-il si j'ai besoin de plus de 10 pages services&nbsp;?</summary>
-          <p>Les Packs 2 et 3 incluent jusqu'à 10 pages services détaillées. Au-delà, chaque page supplémentaire est facturée 10&nbsp;€ HT/mois (créée et optimisée SEO par nos soins, sans surcoût de mise en place).</p>
+          <p>Les Packs 2 et 3 incluent un site complet jusqu'à 15 pages (accueil, contact, jusqu'à 10 pages services, page zone d'intervention, page réalisations, page avis, page partenaires). Au-delà des 10 pages services, chaque page supplémentaire est facturée 10&nbsp;€ HT/mois (création et optimisation SEO incluses, sans surcoût de mise en place).</p>
+        </details>
+        <details class="faq-item">
+          <summary>En quoi consiste le suivi SEO et l'optimisation GEO&nbsp;?</summary>
+          <p>Le SEO traditionnel consiste à optimiser votre site pour les moteurs de recherche comme Google : positions sur vos requêtes cibles, structure technique, contenus. Le GEO (Generative Engine Optimization) est l'équivalent pour les intelligences artificielles comme ChatGPT, Perplexity ou Gemini, qui deviennent les nouveaux moteurs de recherche. Web'Artiz suit régulièrement les performances de votre site et applique les optimisations nécessaires pour maintenir et améliorer votre visibilité dans la durée.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Suis-je propriétaire de mon site&nbsp;?</summary>
+          <p>Vous êtes propriétaire de votre nom de domaine (enregistré à votre nom dès le premier jour) et de tous vos contenus éditoriaux (textes, photos, articles). Web'Artiz reste propriétaire du code source et du système de templates, ce qui nous permet d'optimiser et de mettre à jour votre site en continu. C'est ce modèle qui rend possible un service complet à partir de 59&nbsp;€ HT/mois.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Que se passe-t-il à la fin de mon engagement&nbsp;?</summary>
+          <p>À l'issue des 36 mois d'engagement, votre abonnement se poursuit sans engagement supplémentaire — vous pouvez le résilier à tout moment avec un préavis d'un mois. Vous conservez alors votre nom de domaine et l'intégralité de vos contenus, que vous pourrez utiliser pour un nouveau site.</p>
         </details>
       </div>
     </div>
@@ -972,7 +1157,7 @@
       <div class="feature-card">
         <div class="num">01</div>
         <h3>SEO local complet</h3>
-        <p>Schema.org Plumber/LocalBusiness, geo meta tags, FAQPage rich snippets. Optimisé pour le pack local Google Maps.</p>
+        <p>Schema.org LocalBusiness adapté à votre métier, geo meta tags, FAQPage rich snippets. Optimisé pour le pack local Google Maps.</p>
       </div>
       <div class="feature-card">
         <div class="num">02</div>
@@ -991,8 +1176,8 @@
       </div>
       <div class="feature-card">
         <div class="num">05</div>
-        <h3>Hébergement inclus</h3>
-        <p>Hébergement, nom de domaine et certificat SSL pris en charge dans l'abonnement mensuel.</p>
+        <h3>Hébergement &amp; domaine inclus</h3>
+        <p>Hébergement professionnel, nom de domaine (enregistré à votre nom) et certificat SSL pris en charge dans l'abonnement mensuel — sans surcoût ni renouvellement à gérer.</p>
       </div>
       <div class="feature-card">
         <div class="num">06</div>
@@ -1015,7 +1200,8 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>Templates artisans — Showcase agence SEO</p>
+    <p><strong>Web'Artiz</strong> — Site web référencé pour artisans</p>
+    <p style="margin-top:0.5rem; font-size:0.9rem;">Web'Artiz est un service d'Eoliz — <a href="mailto:contact@eoliz.fr">contact@eoliz.fr</a></p>
     <p style="margin-top:0.5rem; opacity:0.6; font-size:0.85rem;">⚠️ Démos en mode preview/staging — Pas pour usage public direct</p>
   </div>
 </footer>
