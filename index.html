@@ -77,7 +77,6 @@
     font-weight: var(--fw-heading);
     color: var(--color-primary);
     letter-spacing: -0.01em;
-    text-wrap: balance;
   }
   h1 { font-size: var(--fs-h1); font-weight: var(--fw-heading-strong); line-height: 1.05; }
   h2 { font-size: var(--fs-h2); }
@@ -145,8 +144,9 @@
   .site-footer .brand-tagline { color: rgba(255,255,255,0.7); }
 
   /* WHY SUBSCRIPTION */
-  section.section-why-subscription { padding: 5rem 0; background: white; }
-  .section-intro-block { max-width: 880px; margin-bottom: 3rem; }
+  section.section-why-subscription { padding: 4rem 0; background: white; }
+  .section-intro-block { margin-bottom: 3rem; }
+  .section-intro-block p { max-width: 880px; }
   .section-intro-block h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); margin-bottom: 0.75rem; }
   .section-intro-block p { color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.65; }
   .pillars-grid {
@@ -192,8 +192,9 @@
   }
 
   /* MEASURE IMPACT */
-  section.section-analytics { padding: 5rem 0; background: var(--color-bg); }
-  .analytics-intro { max-width: 880px; margin-bottom: 3rem; }
+  section.section-analytics { padding: 4rem 0; background: var(--color-bg); }
+  .analytics-intro { margin-bottom: 3rem; }
+  .analytics-intro p { max-width: 880px; }
   .analytics-intro h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); margin-bottom: 0.75rem; }
   .analytics-intro p { color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.65; }
   .tools-grid {
@@ -264,7 +265,7 @@
   }
 
   /* PACKS GRID */
-  section.packs { padding: 5rem 0; background: var(--color-bg); }
+  section.packs { padding: 4rem 0; background: var(--color-bg); }
   .pack-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -583,7 +584,7 @@
 
   /* CTA */
   section.cta {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
     color: white;
     text-align: center;
@@ -610,15 +611,14 @@
 
   /* === Section "Comment ça marche" === */
   section.how-it-works {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background: white;
   }
   .section-intro {
-    max-width: 880px;
     margin-bottom: 3rem;
   }
-  .section-intro h2 {
-    text-wrap: balance;
+  .section-intro .lead-muted {
+    max-width: 880px;
   }
   .eyebrow-badge {
     display: inline-block;
@@ -1103,7 +1103,7 @@
         <div class="pack-card-header">
           <span class="pack-tag">Pack 3 — Premium</span>
           <h2>Site premium</h2>
-          <p class="pack-card-tagline">La visibilité maximale : Google + IA + suivi temps réel</p>
+          <p class="pack-card-tagline">Visibilité Google + IA + blog mensuel</p>
         </div>
         <div class="pack-price">
           <div class="pack-price-amount">
